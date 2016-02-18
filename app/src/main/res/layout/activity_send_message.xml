@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true"
+             tools:context="com.app.feng.sendfestivalsmsdemo.activity.SendMessageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/id_send_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:background="@drawable/sms_item"
+            android:textColor="#777"
+            android:textSize="14sp"
+            android:gravity="top"
+
+            />
+
+        <Button
+            android:id="@+id/id_send_addperson"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="添加联系人"
+            />
+
+        <com.app.feng.sendfestivalsmsdemo.element.FlowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_send_flowlayout">
+
+        </com.app.feng.sendfestivalsmsdemo.element.FlowLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_send_layout_loading"
+        android:background="#bbb"
+        android:clickable="true"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"
+            android:gravity="center">
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_send_progressBar"
+                android:indeterminate="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送中..."
+                android:id="@+id/t"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_acbtn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fab_button_margin_bottom"
+        android:src="@mipmap/icon_to_send"
+        app:borderWidth="0dp"
+        app:backgroundTint="@color/main_color"
+        android:layout_gravity="bottom|center_horizontal"/>
+
+
+
+</FrameLayout>

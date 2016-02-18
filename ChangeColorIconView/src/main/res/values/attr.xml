@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="mainicon" format="reference"/>
+    <attr name="text" format="string"/>
+    <attr name="bgcolor" format="color"/>
+    <attr name="textSize" format="dimension"/>
+
+    <declare-styleable name="ChangeColorIconView">
+        <attr name="mainicon"/>
+        <attr name="text"/>
+        <attr name="bgcolor"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+
+</resources>

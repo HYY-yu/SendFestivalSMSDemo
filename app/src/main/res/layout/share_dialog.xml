@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="16dp"
+              android:orientation="vertical"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_group_bg"
+                android:drawableTop="@mipmap/share_qq"
+                android:text="QQ"
+                android:textColor="#888888"/>
+
+            <Button
+                android:id="@+id/button_qzone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_group_bg"
+                android:drawableTop="@mipmap/share_qzone"
+                android:text="QQ空间"
+                android:textColor="#888888"/>
+
+            <Button
+                android:id="@+id/button_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_group_bg"
+                android:drawableTop="@mipmap/share_weixin"
+                android:text="微信"
+                android:textColor="#888888"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <Button
+                android:id="@+id/button_pengyou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/share_group_bg"
+                android:drawableTop="@mipmap/share_pengyou"
+                android:text="朋友圈"
+                android:textColor="#888888"/>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>

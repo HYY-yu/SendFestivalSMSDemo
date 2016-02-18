@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'feng'
+            keyPassword '690174435'
+            storeFile file('D:/AndroidProject/app_key/feng.jks')
+            storePassword '690174435'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion "20.0.0"
+    defaultConfig {
+        applicationId "com.app.feng.sendfestivalsmsdemo"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 4
+        versionName "2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+
+            zipAlignEnabled true
+            //移除无用的resource文件
+            shrinkResources true
+
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.android.support:support-v4:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile files('libs/libammsdk.jar')
+    compile files('libs/open_sdk_r5276_lite.jar')
+    compile project(':ChangeColorIconView')
+    compile project(':library')
+    compile project(':treelistview')
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_linear"
+        android:orientation="horizontal">
+
+        <com.app.feng.changecoloriconview.ChangeColorIconView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:bgcolor="#ff45c01a"
+            app:mainicon="@mipmap/ic_menu_sort_by_size"
+            app:text="热门"
+            app:textSize="12sp"/>
+
+        <com.app.feng.changecoloriconview.ChangeColorIconView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:bgcolor="#ff45c01a"
+            app:mainicon="@mipmap/ic_menu_moreoverflow"
+            app:text="分类"
+            app:textSize="12sp"/>
+
+        <com.app.feng.changecoloriconview.ChangeColorIconView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:bgcolor="#ff45c01a"
+            app:mainicon="@mipmap/ic_menu_home"
+            app:text="我"
+            app:textSize="12sp"/>
+    </LinearLayout>
+</RelativeLayout>
